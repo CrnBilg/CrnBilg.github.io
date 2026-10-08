@@ -47,6 +47,11 @@ html { scroll-behavior: smooth; }
   * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -240,9 +245,10 @@ img { max-width: 100%; }
   margin-bottom: 1.5rem;
 }
 .hero-name {
-  font-size: clamp(3.5rem, 11vw, 8.5rem);
+  font-size: clamp(2.75rem, 13vw, 8.5rem);
   line-height: 0.95;
   letter-spacing: -0.01em;
+  overflow-wrap: break-word;
 }
 .hero-name em {
   font-style: italic;
@@ -286,7 +292,7 @@ img { max-width: 100%; }
 /* ---------- Projects ---------- */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr));
   gap: 1.5rem;
 }
 .project-card {
@@ -406,7 +412,7 @@ img { max-width: 100%; }
 /* ---------- Skills ---------- */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
   gap: 2.5rem;
 }
 .skill-cat-title {
