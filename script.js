@@ -61,6 +61,11 @@ const education = [
 
 const experience = [
   {
+    date: "Jun 2026 — Present",
+    title: "Software Engineering Intern — Kocaer Çelik",
+    desc: "On-site internship in Yunusemre, Manisa, Türkiye."
+  },
+  {
     date: "2025",
     title: "Vodafone Future Challenge 2025 — Idea Competition",
     desc: "Participant with AirLink, a 5G-based drone logistics concept; developed the business model and pitch presentation."
