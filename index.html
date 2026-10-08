@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ceren Bilgenoğlu — Software Engineer</title>
+<meta name="description" content="Ceren Bilgenoğlu — Software Engineering student based in İzmir, Turkey. Projects, education and skills.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="bg-layer" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <nav class="nav-inner">
+    <a href="#top" class="nav-logo">C.B.</a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+      <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+      <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <p class="hero-eyebrow reveal">Software Engineering Student · İzmir, Turkey</p>
+    <h1 class="hero-name reveal">Ceren<br><em>Bilgenoğlu</em></h1>
+    <p class="hero-tagline reveal">Building reliable, database-driven software — one well-tested project at a time.</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="cv.pdf" download>Download CV</a>
+      <a class="btn btn-ghost" href="#contact">Contact</a>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-head reveal">
+      <span class="section-kicker">Selected Work</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="project-grid" id="projectGrid"></div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="section-head reveal">
+      <span class="section-kicker">Background</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <ol class="timeline" id="educationTimeline"></ol>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="section-head reveal">
+      <span class="section-kicker">Involvement</span>
+      <h2 class="section-title">Experience &amp; Activities</h2>
+    </div>
+    <ol class="timeline" id="experienceTimeline"></ol>
+    <ul class="cert-list" id="certList" aria-label="Certifications"></ul>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-head reveal">
+      <span class="section-kicker">Toolkit</span>
+      <h2 class="section-title">Skills</h2>
+    </div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </section>
+
+</main>
+
+<footer class="footer" id="contact">
+  <div class="footer-inner reveal">
+    <h2 class="footer-title">Let's talk.</h2>
+    <p class="footer-sub">Open to internships, graduate roles and collaborative projects.</p>
+    <div class="footer-links">
+      <a href="mailto:ceren.bilgenoglu@yahoo.com.tr">ceren.bilgenoglu@yahoo.com.tr</a>
+      <a href="https://github.com/CrnBilg" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/ceren-bilgeno%C4%9Flu-118753369/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <p class="footer-meta">© <span id="year"></span> Ceren Bilgenoğlu</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
