@@ -50,12 +50,14 @@ const education = [
   {
     date: "2023 — Present",
     title: "Yaşar University",
-    desc: "B.Sc. in Software Engineering"
+    desc: "B.Sc. in Software Engineering",
+    logo: "logos/yasar.png"
   },
   {
     date: "2018 — 2022",
     title: "İzmir Turkish College Science High School",
-    desc: ""
+    desc: "",
+    logo: "logos/itk.png"
   }
 ];
 
@@ -121,8 +123,13 @@ function renderTimeline(containerId, data) {
   el.innerHTML = data.map(item => `
     <li class="timeline-item reveal">
       <span class="timeline-date">${item.date}</span>
-      <h3 class="timeline-title">${item.title}</h3>
-      ${item.desc ? `<p class="timeline-desc">${item.desc}</p>` : ""}
+      <div class="timeline-body">
+        ${item.logo ? `<span class="timeline-logo"><img src="${item.logo}" alt="" loading="lazy"></span>` : ""}
+        <div>
+          <h3 class="timeline-title">${item.title}</h3>
+          ${item.desc ? `<p class="timeline-desc">${item.desc}</p>` : ""}
+        </div>
+      </div>
     </li>
   `).join("");
 }
